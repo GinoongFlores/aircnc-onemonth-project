@@ -32,6 +32,18 @@ strong {
   font-weight: 600;
 }
 
+/* Header */
+
+.container-header {
+  width: 100%;
+}
+
+/* Container */
+.container-header {
+ display: inline-block;
+ 
+}
+
 
 /*
  * Button styles
