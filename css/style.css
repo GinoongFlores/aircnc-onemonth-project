@@ -3,9 +3,12 @@
 */
 
 * {
-  -moz-box-sizing: border-box; /* Firexfox */
-  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-  box-sizing: border-box; /* IE */
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
 }
 
 body {
@@ -28,21 +31,113 @@ a {
   text-decoration: none;
 }
 
+p.about {
+  line-height: 1.5;
+}
+
 strong {
   font-weight: 600;
 }
 
-/* Header */
+/* 1st section */
 
-.container-header {
-  width: 100%;
+section.bd-white {
+  background: #fff;
+  text-align: center;
+  padding: 25px;
+}
+
+section.bd-white h1 {
+  margin-bottom: 5px;
+}
+
+section.bd-white .profile {
+  margin-bottom: 25px;
+}
+
+.owner-details img {
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+h2.relationship,
+h2.owner {
+  color: #909597;
+  margin-bottom: 3px;
+}
+
+h2.owner {
+  font-weight: bold;
+}
+
+p.location {
+  margin-bottom: 20px;
+}
+
+/* Icons */
+
+.icon {
+  float: left;
+  width: 33.3%;
+}
+
+.icon img {
+  height: 30px;
+  margin-bottom: 3px;
+}
+
+.booking h2 {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 13px;
+}
+
+h2.price .time {
+  font-size: 16px;
 }
 
 /* Container */
-.container-header {
- display: inline-block;
- 
+.container {}
+
+/* Header */
+header .logo-img {
+  border-right: 1px solid #dce0e0;
 }
+
+.hero-img img {
+  width: 100%;
+}
+
+.owner-pic img {
+  border-radius: 50%;
+}
+
+/* 2nd section */
+section.about {
+  background-color: rgb(206, 206, 206);
+  padding: 20px;
+}
+
+section.about p.about-dog {
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+section.about h3 {
+  line-height: 3;
+  text-align: center;
+}
+
+.care,
+.games {
+  margin: 30px 0;
+}
+
+
+
+/* Dog's container */
+
+.dogs-container {}
 
 
 /*
@@ -61,4 +156,27 @@ strong {
   margin: 0 auto;
 }
 
+a.button {
+  text-align: center;
+}
 
+@media only screen and (min-width: 1060px) {
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+
+  .column {
+    float: left;
+  }
+
+
+
+  section.bd-white .profile {
+    width: 660px;
+  }
+
+  section.bd-white .booking {
+    width: 380px;
+  }
+}
