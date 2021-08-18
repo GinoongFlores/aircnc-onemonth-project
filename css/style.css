@@ -31,27 +31,23 @@ a {
   text-decoration: none;
 }
 
-p.about {
-  line-height: 1.5;
-}
-
 strong {
   font-weight: 600;
 }
 
 /* 1st section */
 
-section.bd-white {
+.bd-white {
   background: #fff;
   text-align: center;
   padding: 25px;
 }
 
-section.bd-white h1 {
+.bd-white h1 {
   margin-bottom: 5px;
 }
 
-section.bd-white .profile {
+.bd-white .profile {
   margin-bottom: 25px;
 }
 
@@ -61,12 +57,12 @@ section.bd-white .profile {
 }
 
 h2.relationship,
-h2.owner {
+h2.name {
   color: #909597;
   margin-bottom: 3px;
 }
 
-h2.owner {
+h2.name {
   font-weight: bold;
 }
 
@@ -96,8 +92,6 @@ h2.price .time {
   font-size: 16px;
 }
 
-/* Container */
-.container {}
 
 /* Header */
 header .logo-img {
@@ -113,17 +107,17 @@ header .logo-img {
 }
 
 /* 2nd section */
-section.about {
+.about {
   background-color: rgb(206, 206, 206);
   padding: 20px;
 }
 
-section.about p.about-dog {
+.about p.about-dog {
   line-height: 1.6;
   margin-bottom: 50px;
 }
 
-section.about h3 {
+.about h3 {
   line-height: 3;
   text-align: center;
 }
@@ -132,12 +126,6 @@ section.about h3 {
 .games {
   margin: 30px 0;
 }
-
-
-
-/* Dog's container */
-
-.dogs-container {}
 
 
 /*
@@ -156,27 +144,50 @@ section.about h3 {
   margin: 0 auto;
 }
 
-a.button {
-  text-align: center;
-}
 
 @media only screen and (min-width: 1060px) {
   .container {
     width: 1040px;
     margin: 0 auto;
+
   }
 
   .column {
     float: left;
   }
 
+  .button {
+    width: 275px;
+    margin: auto;
+  }
 
 
-  section.bd-white .profile {
+  .bd-white .profile {
     width: 660px;
   }
 
-  section.bd-white .booking {
+  .bd-white .booking {
     width: 380px;
   }
+
+  .bd-white .owner-details {
+    width: 20%;
+  }
+
+  .bd-white .pet-details {
+    width: 80%;
+    text-align: left;
+  }
+
+  .bd-white .pet-details .icon {
+    margin-right: 50px;
+    width: inherit;
+  }
+
+  .bd-white .pet-details .icon img {
+    display: block;
+    margin: 3px auto 3px;
+  }
+
+
 }
