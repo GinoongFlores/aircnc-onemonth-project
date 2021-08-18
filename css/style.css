@@ -44,22 +44,22 @@ strong {
 }
 
 .bd-white h1 {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .bd-white .profile {
-  margin-bottom: 25px;
+  margin-bottom: 1.5rem;
 }
 
 .owner-details img {
   border-radius: 50%;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 h2.relationship,
 h2.name {
   color: #909597;
-  margin-bottom: 3px;
+  margin-bottom: 0.1875rem;
 }
 
 h2.name {
@@ -67,7 +67,7 @@ h2.name {
 }
 
 p.location {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 /* Icons */
@@ -78,22 +78,31 @@ p.location {
 }
 
 .icon img {
+  /* height: 1.875rem; */
   height: 30px;
-  margin-bottom: 3px;
+  margin-bottom: 0.1875rem;
 }
 
 .booking h2 {
   font-weight: 600;
-  font-size: 22px;
-  margin-bottom: 13px;
+  font-size: 1.375rem;
+  margin-bottom: 0.8125rem;
 }
 
 h2.price .time {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
+h1 {
+  font-size: 1.375rem;
+  color: #666a6c;
+}
 
 /* Header */
+header {
+  background: #fff;
+}
+
 header .logo-img {
   border-right: 1px solid #dce0e0;
 }
@@ -107,14 +116,18 @@ header .logo-img {
 }
 
 /* 2nd section */
+
+
+
+
 .about {
-  background-color: rgb(206, 206, 206);
-  padding: 20px;
+  background-color: rgb(231, 231, 231);
+  padding: 1.25rem;
 }
 
 .about p.about-dog {
   line-height: 1.6;
-  margin-bottom: 50px;
+  margin-bottom: 	3.125rem;
 }
 
 .about h3 {
@@ -124,9 +137,16 @@ header .logo-img {
 
 .care,
 .games {
-  margin: 30px 0;
+  margin: 1.875rem 0;
 }
 
+.games > p {
+  margin-bottom: 1rem;
+}
+
+.games-thing .seperator {
+  padding: 5px 0;
+}
 
 /*
  * Button styles
@@ -161,6 +181,14 @@ header .logo-img {
     margin: auto;
   }
 
+  .bd-white h1 {
+    margin-bottom: 0.6875rem;
+  }
+
+  .bd-white h2 {
+    margin-bottom: 0.1875rem;
+  }
+
 
   .bd-white .profile {
     width: 660px;
@@ -180,13 +208,23 @@ header .logo-img {
   }
 
   .bd-white .pet-details .icon {
+    /* margin-right: 3.125rem; */
     margin-right: 50px;
     width: inherit;
   }
 
   .bd-white .pet-details .icon img {
     display: block;
-    margin: 3px auto 3px;
+    margin: 0.1875rem auto 0.1875rem;
+  }
+
+  .games-thing {
+    float: right;
+    width: 90%;
+  }
+
+  .games-thing .seperator {
+    padding: 10px;
   }
 
 
