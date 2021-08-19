@@ -117,9 +117,6 @@ header .logo-img {
 
 /* 2nd section */
 
-
-
-
 .about {
   background-color: rgb(231, 231, 231);
   padding: 1.25rem;
@@ -130,23 +127,33 @@ header .logo-img {
   margin-bottom: 	3.125rem;
 }
 
-.about h3 {
+.about h2 {
   line-height: 3;
   text-align: center;
+  font-weight: 600;
+  font-size: 1.375rem;
 }
 
-.care,
-.games {
-  margin: 1.875rem 0;
+span.highlight {
+  font-weight: 600;
 }
 
-.games > p {
-  margin-bottom: 1rem;
+.contact {
+  font-weight: 800;
+  color:rgb(255, 89, 95);
 }
 
-.games-thing .seperator {
-  padding: 5px 0;
+.care > p, .games > p {
+  margin-top: 10px;
+  line-height: 3;
 }
+
+
+.care p, .games-thing {
+  line-height: 2;
+}
+
+
 
 /*
  * Button styles
@@ -164,12 +171,26 @@ header .logo-img {
   margin: 0 auto;
 }
 
+.button:hover {
+  filter: brightness(1.2);
+  background-color: #00b661;
+  border-bottom: 1px solid rgb(0, 167, 22);
+  transform: scale(1.05);
+}
+
+
+
 
 @media only screen and (min-width: 1060px) {
   .container {
     width: 1040px;
     margin: 0 auto;
 
+  }
+
+  p.about-dog, .care, .games {
+   width: 80%;
+   margin: 0 auto;
   }
 
   .column {
@@ -218,13 +239,38 @@ header .logo-img {
     margin: 0.1875rem auto 0.1875rem;
   }
 
-  .games-thing {
-    float: right;
-    width: 90%;
+  .push > p {
+   margin: 5px 0;
   }
 
+  .push {
+    margin-left: 100px;
+  }
+  
   .games-thing .seperator {
+    margin: 10px 0;
+  }
+
+  hr {
+    width: 80%;
+  }
+
+  .photos {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .photos img {
+    width: 350px;
+    height: 400px;
+    transition: 1s;
     padding: 10px;
+  }
+
+  .photos img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+   
   }
 
 
