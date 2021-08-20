@@ -43,6 +43,11 @@ strong {
   padding: 25px;
 }
 
+.bd-white .profile {
+  width: 660px;
+  border-right: 1px solid #dce0e0;
+}
+
 .bd-white h1 {
   margin-bottom: 0.3125rem;
 }
@@ -54,7 +59,9 @@ strong {
 .owner-details img {
   border-radius: 50%;
   margin-bottom: 0.5rem;
+  width: 90px;
 }
+
 
 h2.relationship,
 h2.name {
@@ -124,7 +131,7 @@ header .logo-img {
 
 .about p.about-dog {
   line-height: 1.6;
-  margin-bottom: 	3.125rem;
+  margin-bottom: 3.125rem;
 }
 
 .about h2 {
@@ -140,16 +147,18 @@ span.highlight {
 
 .contact {
   font-weight: 800;
-  color:rgb(255, 89, 95);
+  color: rgb(255, 89, 95);
 }
 
-.care > p, .games > p {
+.care>p,
+.games>p {
   margin-top: 10px;
   line-height: 3;
 }
 
 
-.care p, .games-thing {
+.care p,
+.games-thing {
   line-height: 2;
 }
 
@@ -178,6 +187,12 @@ span.highlight {
   transform: scale(1.05);
 }
 
+.photos img {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
 
 
 
@@ -188,9 +203,11 @@ span.highlight {
 
   }
 
-  p.about-dog, .care, .games {
-   width: 80%;
-   margin: 0 auto;
+  p.about-dog,
+  .care,
+  .games {
+    width: 50%;
+    margin: 0 auto;
   }
 
   .column {
@@ -239,38 +256,39 @@ span.highlight {
     margin: 0.1875rem auto 0.1875rem;
   }
 
-  .push > p {
-   margin: 5px 0;
+  .push>p {
+    margin: 5px 0;
   }
 
   .push {
     margin-left: 100px;
   }
-  
+
   .games-thing .seperator {
     margin: 10px 0;
   }
 
   hr {
-    width: 80%;
+    width: 50%;
   }
 
   .photos {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
   }
 
   .photos img {
-    width: 350px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     transition: 1s;
     padding: 10px;
+    display: inline-block;
   }
 
   .photos img:hover {
     filter: grayscale(100%);
     transform: scale(1.1);
-   
+
   }
 
 
