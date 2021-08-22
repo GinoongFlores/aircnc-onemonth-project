@@ -43,10 +43,6 @@ strong {
   padding: 25px;
 }
 
-.bd-white .profile {
-  width: 660px;
-  border-right: 1px solid #dce0e0;
-}
 
 .bd-white h1 {
   margin-bottom: 0.3125rem;
@@ -219,6 +215,7 @@ span.highlight {
     margin: auto;
   }
 
+  /* first section */
   .bd-white h1 {
     margin-bottom: 0.6875rem;
   }
@@ -246,8 +243,8 @@ span.highlight {
   }
 
   .bd-white .pet-details .icon {
-    /* margin-right: 3.125rem; */
-    margin-right: 50px;
+    margin-right: 3.125rem;
+    /* margin-right: 50px; */
     width: inherit;
   }
 
@@ -256,39 +253,43 @@ span.highlight {
     margin: 0.1875rem auto 0.1875rem;
   }
 
+  /* push */
   .push>p {
-    margin: 5px 0;
+    margin: 0.313rem 0;
   }
 
   .push {
-    margin-left: 100px;
+    margin-left: 6.25rem;
+    top: -2.063rem;
+    position: relative;
   }
 
+  /* games-thing */
   .games-thing .seperator {
-    margin: 10px 0;
+    margin: 0.625rem 0;
   }
 
   hr {
     width: 50%;
   }
 
+  /* photo */
+
   .photos {
-    width: 50%;
-    margin: 0 auto;
+    text-align: center;
   }
 
   .photos img {
     width: 300px;
     height: 300px;
     transition: 1s;
-    padding: 10px;
+    padding: 0.625rem;
     display: inline-block;
   }
 
   .photos img:hover {
     filter: grayscale(100%);
     transform: scale(1.1);
-
   }
 
 
