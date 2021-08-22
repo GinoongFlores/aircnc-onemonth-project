@@ -35,17 +35,28 @@ strong {
   font-weight: 600;
 }
 
+
+/* Header */
+header {
+  background: #fff;
+}
+
+header .logo-img {
+  border-right: 1px solid #dce0e0;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+
+
 /* 1st section */
 
 .bd-white {
   background: #fff;
   text-align: center;
-  padding: 25px;
-}
-
-.bd-white .profile {
-  width: 660px;
-  border-right: 1px solid #dce0e0;
+  padding: 1.5625rem;
 }
 
 .bd-white h1 {
@@ -85,7 +96,6 @@ p.location {
 }
 
 .icon img {
-  /* height: 1.875rem; */
   height: 30px;
   margin-bottom: 0.1875rem;
 }
@@ -105,61 +115,9 @@ h1 {
   color: #666a6c;
 }
 
-/* Header */
-header {
-  background: #fff;
-}
-
-header .logo-img {
-  border-right: 1px solid #dce0e0;
-}
-
-.hero-img img {
-  width: 100%;
-}
 
 .owner-pic img {
   border-radius: 50%;
-}
-
-/* 2nd section */
-
-.about {
-  background-color: rgb(231, 231, 231);
-  padding: 1.25rem;
-}
-
-.about p.about-dog {
-  line-height: 1.6;
-  margin-bottom: 3.125rem;
-}
-
-.about h2 {
-  line-height: 3;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.375rem;
-}
-
-span.highlight {
-  font-weight: 600;
-}
-
-.contact {
-  font-weight: 800;
-  color: rgb(255, 89, 95);
-}
-
-.care>p,
-.games>p {
-  margin-top: 10px;
-  line-height: 3;
-}
-
-
-.care p,
-.games-thing {
-  line-height: 2;
 }
 
 
@@ -193,20 +151,52 @@ span.highlight {
   margin-bottom: 0.5rem;
 }
 
+/* details */
 
+.details {
+  padding: 1.25rem;
+}
 
+.details h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem 0 1.5rem 0;
+  color: rgb(86, 90, 92);
+}
+
+.details h4 {
+  margin-bottom: 0.625rem;
+}
+
+.details li {
+  margin-bottom: 0.3125rem;
+}
+
+.details section {
+  border-bottom: 1px solid rgb(220, 224, 224);
+  padding: 1rem 0 1.25rem 0;
+}
+
+.details .about {
+ font-size: 0.8125rem;
+ line-height: 1.375rem;
+ text-align: center;
+}
+
+.details p {
+  text-align: left;
+}
+
+.details .photos img {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
 
 @media only screen and (min-width: 1060px) {
   .container {
     width: 1040px;
-    margin: 0 auto;
-
-  }
-
-  p.about-dog,
-  .care,
-  .games {
-    width: 50%;
     margin: 0 auto;
   }
 
@@ -230,6 +220,7 @@ span.highlight {
 
   .bd-white .profile {
     width: 660px;
+    border-right: 1px solid #DCE0E0;
   }
 
   .bd-white .booking {
@@ -246,8 +237,8 @@ span.highlight {
   }
 
   .bd-white .pet-details .icon {
-    /* margin-right: 3.125rem; */
-    margin-right: 50px;
+    margin-right: 3.125rem;
+    /* margin-right: 50px; */
     width: inherit;
   }
 
@@ -256,39 +247,42 @@ span.highlight {
     margin: 0.1875rem auto 0.1875rem;
   }
 
-  .push>p {
-    margin: 5px 0;
+  /* details */
+  .details .main {
+    width: 690px
   }
 
-  .push {
-    margin-left: 100px;
+  .details h4 {
+    width: 46px;
   }
 
-  .games-thing .seperator {
-    margin: 10px 0;
+  .details .about {
+    text-align: left;
   }
 
-  hr {
-    width: 50%;
+  .details .care .column, .details .games .column {
+    margin-right: 5.9rem;
+  }
+  
+  .details .games li img{
+    padding-right: 0.5rem;
   }
 
-  .photos {
-    width: 50%;
-    margin: 0 auto;
+  .details .photos {
+    text-align: center;
   }
 
-  .photos img {
-    width: 300px;
-    height: 300px;
+  .details .photos img {
+    width: 200px;
+    height: 200px;
     transition: 1s;
-    padding: 10px;
-    display: inline-block;
+    display: inline;
+    margin: 0 0.85rem;
   }
 
   .photos img:hover {
     filter: grayscale(100%);
     transform: scale(1.1);
-
   }
 
 
